@@ -1,0 +1,35 @@
+[project]
+name = 'BitEdu'
+description = 'AI-Powered Learning Platform for Blockchain and Bitcoin Education'
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+
+[contracts.course-certifications]
+path = 'contracts/course-certifications.clar'
+clarity_version = 2
+epoch = 3.1
+
+[contracts.learning-paths]
+path = 'contracts/learning-paths.clar'
+clarity_version = 2
+epoch = 3.1
+
+[contracts.achievement-system]
+path = 'contracts/achievement-system.clar'
+clarity_version = 2
+epoch = 3.1
+
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'

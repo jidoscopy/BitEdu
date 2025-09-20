@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(clarity-cli check:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
